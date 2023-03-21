@@ -1,34 +1,38 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+<h1>
+  <img src="https://user-images.githubusercontent.com/47314813/223076346-b8c52030-686b-4541-9746-5b5ade5d98db.png" style="height: 1em;">
+  <span> Toolgankelijk</span>
+</h1>
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+<h2 id="inhoud">📦 Inhoud</h2>
 
-## Inhoudsopgave
+1. Beschrijving
+2. Kenmerken
+3. Bronnen
+4. Licenties
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+<h2 id="beschrijving">ℹ️ Beschrijving</h2>
 
-## Beschrijving
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Toolgankelijk is een tool...
 
-## Gebruik
-<!- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+<h2 id="kenmerken">✨ Kenmerken</h2>
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+De website wordt server side gerendered door middel van NodeJS & EJS. Het is gebouwd in HTML, CSS & JS. Data wordt geleverd door de API van FDND die voor vervoerregio-amsterdam is gemaakt.
 
-## Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+<h2 id="installatie">📥 Installatie</h2>
 
+Zorg dat je NodeJS geïnstalleerd hebt. Clone deze repository. Open een terminal. Zorg dat je in het juiste pad zit van dit project. Voer de commando `npm install` uit. Wanneer deze klaar is kun je de applicatie starten door de commando `npm start` uit te voeren. De applicatie wordt gehost op http://localhost:3000/
 
-## Bronnen
+<h2 id="bronnen">🌍 Bronnen</h2>
 
-## Licentie
+- [Instructies](docs/INSTRUCTIONS.md)
+- [NodeJS](https://nodejs.org/)
+- [ExpressJS](https://expressjs.com/)
+- [EJS](https://ejs.co/)
+- [API Documentatie](https://api.vervoerregio-amsterdam.fdnd.nl/)
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+<h2 id="licenties">🪪 Licenties</h2>
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).
+
