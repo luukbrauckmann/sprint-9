@@ -1,0 +1,34 @@
+{
+  "name": "the-web-is-for-everyone-interactive-functionality",
+  "version": "1.0.0",
+  "description": "Toolgankelijk voor Vervoerregio Amsterdam",
+  "main": "src/server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+		"start": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "EJS",
+    "SSR"
+  ],
+  "author": "Luuk Brauckmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality/issues"
+  },
+  "homepage": "https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  }
+}
