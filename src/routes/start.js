@@ -4,7 +4,7 @@ const StartPage = express.Router()
 
 const options = {
 	title: 'Start',
-	template: './start.ejs',
+	template: './start.ejs'
 }
 
 StartPage.get('/', (request, response) => response.render('index', options))

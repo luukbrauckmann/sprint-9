@@ -1,1 +1,53 @@
-Account
+<header class="main__header">
+	<h1>Account</h1>
+</header>
+
+<div class="main__content">
+	<article class="card">
+		<header class="card__header">
+			<h2>Gegevens</h2>
+		</header>
+
+		<div class="card__content">
+			<form action="" method="post">
+				<fieldset>
+					<label for="email">E-mailadress</label>
+					<input type="email" name="email">
+				</fieldset>
+
+				<fieldset>
+					<label for="name">Naam</label>
+					<input type="text" name="name">
+				</fieldset>
+
+				<fieldset>
+					<input type="submit" value="Opslaan">
+				</fieldset>
+			</form>
+		</div>
+	</article>
+
+	<article class="card">
+		<header class="card__header">
+			<h2>Website</h2>
+		</header>
+
+		<div class="card__content">
+			<form action="/account/urls" method="post">
+				<fieldset>
+					<label for="titel">Titel</label>
+					<input type="text" name="titel">
+				</fieldset>
+
+				<fieldset>
+					<label for="homepage">Website URL</label>
+					<input type="url" name="homepage">
+				</fieldset>
+
+				<fieldset>
+					<input type="submit" value="Opslaan">
+				</fieldset>
+			</form>
+		</div>
+	</article>
+</div>
