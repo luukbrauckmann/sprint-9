@@ -1,9 +1,10 @@
 import dotenv from 'dotenv'
 import express from 'express'
 
-import StartPage from './routes/start.js'
-import ToolboardPage from './routes/toolboard.js'
-import AccountPage from './routes/account.js'
+import startPage from './routes/start.js'
+import toolboardPage from './routes/toolboard.js'
+import accountPage from './routes/account.js'
+import notFoundPage from './routes/not-found.js'
 
 const server = express()
 const port = 3000
@@ -17,9 +18,11 @@ server.use(express.static('./src/static'))
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
-server.get('/', StartPage)
-server.get('/toolboard', ToolboardPage)
-server.get('/account', AccountPage)
-server.post('/account', AccountPage)
+server.get('/', startPage)
+server.get('/toolboard', toolboardPage)
+server.get('/account', accountPage)
+server.post('/account', accountPage)
+
+server.get('*', notFoundPage)
 
 server.listen(port, () => console.log(`App is served on port http://localhost:${port}/`))

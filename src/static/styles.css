@@ -1,56 +1,84 @@
+/*
+====================
+Imports
+*/
+
+@import './styles/form.style.css';
+@import './styles/card.style.css';
+@import './styles/menu.style.css';
+
+/*
+====================
+Fonts
+*/
+
+@font-face {
+	font-family: Roboto;
+	src: url('fonts/Roboto/Roboto-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*
+====================
+Variables
+*/
+
+:root {
+	--font-size: 1em;
+	--font-family: Roboto, san-serif;
+	--spacing: 1rem;
+
+
+	--primary-color: #D4005B;
+
+	--success-color: #22C55E;
+	--info-color: #3B82F6;
+	--warning-color: #F59E0B;
+	--danger-color: #EF4444;
+
+	--background: #F3F3F3;
+
+	--body-padding: calc(((100vw - var(--max-screen-width)) / 2) + var(--spacing));
+	--max-screen-width: 100%;
+
+	--breakpoint-sm: 36rem;
+	--breakpoint-md: 48rem;
+	--breakpoint-lg: 62rem;
+	--breakpoint-xl: 75rem;
+	--breakpoint-xxl: 90rem;
+}
+
+/*
+====================
+Default styling
+*/
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
+html,
 body {
-	background: grey;
+	height: 100%;
+	font-size: var(--font-size);
+	font-family: var(--font-family);
+	background: var(--background);
+	color: var(--text-color);
 }
 
-form {
-	display: inline-flex;
-	flex-flow: column nowrap;
-	gap: .5em;
-}
-
-fieldset {
+body {
 	display: flex;
-	flex-flow: column nowrap;
-	border: none;
+	flex-flow: column-reverse nowrap;
 }
 
-
-.card {
-  padding: 1em;
-  background: white;
-  display: inline-flex;
-  flex-flow: column nowrap;
-  gap: 1em;
-  border-radius: 0 1em 1em;
-  position: relative;
-  margin-top: 1em;
+body > header,
+body > footer {
+	flex: 0 1 auto;
 }
 
-.card::before,
-.card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10em;
-  height: 1em;
-}
-
-.card::before {
-  width: 2em;
-  transform: translate(9.75em, -100%);
-  background: transparent;
-  border-bottom-left-radius: 1em;
-  box-shadow: -1em .5em 0 white
-}
-.card::after {
-  transform: translateY(-100%);
-  background: white;
-  border-radius: 1em 1em 0 0
+body > main {
+	flex: 1 1 auto;
 }

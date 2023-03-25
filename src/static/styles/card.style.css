@@ -1,0 +1,33 @@
+.card {
+  padding: 1em;
+  background: white;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  border-radius: 0 1em 1em;
+  position: relative;
+  margin-top: 1em;
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10em;
+  height: 1em;
+}
+
+.card::before {
+  width: 2em;
+  transform: translate(9.75em, -100%);
+  background: transparent;
+  border-bottom-left-radius: 1em;
+  box-shadow: -1em .5em 0 white;
+}
+.card::after {
+  transform: translateY(-100%);
+  background: white;
+  border-radius: 1em 1em 0 0;
+}

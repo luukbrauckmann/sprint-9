@@ -1,0 +1,11 @@
+form {
+	display: inline-flex;
+	flex-flow: column nowrap;
+	gap: .5em;
+}
+
+fieldset {
+	display: flex;
+	flex-flow: column nowrap;
+	border: none;
+}
