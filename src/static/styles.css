@@ -82,3 +82,37 @@ body > footer {
 body > main {
 	flex: 1 1 auto;
 }
+
+@media (min-width: 36rem) {
+	:root {
+		--max-screen-width: var(--breakpoint-sm);
+	}
+}
+
+@media (min-width: 48rem) {
+	:root {
+		--max-screen-width: var(--breakpoint-md);
+	}
+}
+
+@media (min-width: 62rem) {
+	:root {
+		--max-screen-width: var(--breakpoint-lg);
+	}
+
+	body {
+		flex-flow: column nowrap;
+	}
+}
+
+@media (min-width: 75rem) {
+	:root {
+		--max-screen-width: var(--breakpoint-xl);
+	}
+}
+
+@media (min-width: 90rem) {
+	:root {
+		--max-screen-width: var(--breakpoint-xxl);
+	}
+}
