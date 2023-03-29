@@ -1,4 +1,5 @@
 .menu {
+	flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -63,13 +64,41 @@
 @media (min-width: 62rem) {
 	.menu {
 		display: flex;
+		height: fit-content;
+		width: max-content;
+		background: white;
+		position: relative;
+		padding-inline: 2.5em var(--body-padding);
+	}
+
+	.menu::before {
+		content: '';
+		position: absolute;
+		transform: translate(-3.25em, 100%);
+		width: auto;
+		height: 100%;
+		aspect-ratio: 2/1;
+		background: transparent;
+		border-top-left-radius: 2.5em;
+		box-shadow: -2.5em -1.25em 0 white;
+		z-index: 1;
 	}
 
 	.menu__item,
 	.menu__item--active {
-		background: transparent;
+		background: white;
 		flex-flow: row nowrap;
+		flex: 0 1 auto;
 		color: black;
+		padding-bottom: 0;
+	}
+
+	.menu__item--active * {
+		color: var(--primary-color);
+	}
+
+	.menu__item__label {
+		padding-right: .5em;
 	}
 
 	.menu__item--active .menu__item__icon {
