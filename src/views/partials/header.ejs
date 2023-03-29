@@ -3,19 +3,19 @@
 </a>
 
 <nav class="menu">
-	<a class="menu__item<%= '--active' %>" href="/">
+	<a class="menu__item<%= path === '/' ? '--active' : '' %>" href="/">
 		<span class="menu__item__icon" >
 			<i class="fa-duotone fa-home"></i>
 		</span>
 		<span class="menu__item__label" >Start</span>
 	</a>
-	<a class="menu__item" href="/toolboard">
+	<a class="menu__item<%= path === '/toolboard' ? '--active' : '' %>" href="/toolboard">
 		<span class="menu__item__icon" >
 			<i class="fa-duotone fa-tools"></i>
 		</span>
 		<span class="menu__item__label" >Toolboard</span>
 	</a>
-	<a class="menu__item" href="/account">
+	<a class="menu__item<%= path === '/account' ? '--active' : '' %>" href="/account">
 		<span class="menu__item__icon" >
 			<i class="fa-duotone fa-user"></i>
 		</span>

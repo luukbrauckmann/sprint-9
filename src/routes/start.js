@@ -3,6 +3,7 @@ import express from 'express'
 const startPage = express.Router()
 
 const options = {
+	path: '/',
 	title: 'Start',
 	template: './start.ejs'
 }

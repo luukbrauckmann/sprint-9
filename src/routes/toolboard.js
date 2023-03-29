@@ -3,6 +3,7 @@ import express from 'express'
 const toolboardPage = express.Router()
 
 const options = {
+	path: '/toolboard',
 	title: 'Toolboard',
 	template: './toolboard.ejs'
 }
