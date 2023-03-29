@@ -13,8 +13,50 @@ Fonts
 */
 
 @font-face {
-	font-family: Roboto;
-	src: url('fonts/Roboto/Roboto-Regular.ttf');
+	font-family: Medium;
+	src: url('fonts/FiraSans/FiraSans-Medium.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Light;
+	src: url('fonts/FiraSans/FiraSans-Light.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Extra Light Italic;
+	src: url('fonts/FiraSans/FiraSans-ExtraLightItalic.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Book;
+	src: url('fonts/FiraSans/FiraSans-Light.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Book Italic;
+	src: url('fonts/FiraSans/FiraSans-Light.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Bold;
+	src: url('fonts/FiraSans/FiraSans-Bold.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Regular;
+	src: url('fonts/FiraSans/FiraSans-Regular.ttf');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -26,7 +68,7 @@ Variables
 
 :root {
 	--font-size: 1em;
-	--font-family: Roboto, san-serif;
+	--font-family: Regular, san-serif;
 	--spacing: 1rem;
 
 
