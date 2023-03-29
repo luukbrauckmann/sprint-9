@@ -19,8 +19,8 @@ server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
 server.get('/', startPage)
-server.get('/toolboard', toolboardPage)
-server.get('/account', accountPage)
+server.get('/toolboard**', toolboardPage)
+server.get('/account**', accountPage)
 server.get('**', notFoundPage)
 
 server.listen(port, () => console.log(`App is served on port http://localhost:${port}/`))

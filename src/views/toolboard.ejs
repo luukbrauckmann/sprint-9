@@ -1,3 +1,11 @@
 <header class="main__header">
 	<h1>Toolboard</h1>
 </header>
+
+<div class="main__content">
+	<%- include('./partials/toolboard-nav.ejs') %>
+
+	<% if(childTemplate.length > 0) { %>
+		<%- include(`${childTemplate}`) %>
+	<% } %>
+</div>

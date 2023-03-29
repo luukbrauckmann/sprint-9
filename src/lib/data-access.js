@@ -1,19 +1,13 @@
-const env = process.env
+const { env } = process
 
-export const get = async () => {
-	console.log(env.API_URL)
+export const get = async (endpoint, query) => {
+	const url = `${env.API_URL}/${endpoint}`
 
 	const options = {
-    method: "GET",
-		mode: "cors",
-		cache: "no-cache",
-		credentials: "same-origin",
-		headers: { "Content-Type": "application/json" },
-		redirect: "follow",
-		referrerPolicy: "no-referrer"
+    method: "GET"
 	}
 
-	return await fetch(env.API_URL, options)
+	return await fetch(url, options)
 		.then((response) => response.json())
 		.catch((error) => error)
 }

@@ -1,0 +1,23 @@
+<section class="partners">
+	<header class="partners__header">
+		<h2>Partners</h2>
+	</header>
+
+	<div class="partners__content">
+		<% for (let partner of partners) { %>
+			<article class="card">
+				<header class="card__header">
+					<h3><%- partner.titel %></h3>
+				</header>
+
+				<div class="card__content">
+					<ul>
+						<% for (let url of partner.urls) { %>
+							<li><%= url.url %></li>
+						<% } %>
+					</ul>
+				</div>
+			</article>
+		<% } %>
+	</div>
+</section>

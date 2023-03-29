@@ -124,6 +124,7 @@ body > footer {
 
 body > main {
 	flex: 1 1 auto;
+	overflow: auto;
 }
 
 .body__header {
@@ -140,8 +141,36 @@ body > main {
 	z-index: 2;
 }
 
-.main__header {
+.main__header,
+.main__content {
 	padding: var(--spacing) var(--body-padding);
+}
+
+.main__header {
+	background: white;
+}
+
+.partners {
+	overflow-x: hidden;
+}
+
+.principes,
+.partners {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1em;
+}
+
+.principes__header,
+.partners__header {
+
+}
+
+.principes__content,
+.partners__content {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 1em;
 }
 
 @media (min-width: 36rem) {
@@ -153,6 +182,11 @@ body > main {
 @media (min-width: 48rem) {
 	:root {
 		--max-screen-width: var(--breakpoint-md);
+	}
+
+	.principes__content,
+	.partners__content {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -168,11 +202,25 @@ body > main {
 	.body__header__image {
 		display: block;
 	}
+
+	.main__header {
+		background: transparent;
+	}
+
+	.principes__content,
+	.partners__content {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @media (min-width: 75rem) {
 	:root {
 		--max-screen-width: var(--breakpoint-xl);
+	}
+
+	.principes__content,
+	.partners__content {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
