@@ -7,11 +7,11 @@
 		<% for (let principe of principes) { %>
 			<article class="card">
 				<header class="card__header">
-					<h3><%- principe.titel %></h3>
+					<h3><%= principe.titel %></h3>
 				</header>
 
 				<div class="card__content">
-					Een principe
+					<%- principe.beschrijving.html %>
 				</div>
 			</article>
 		<% } %>
