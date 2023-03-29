@@ -10,7 +10,11 @@ const options = {
 	childTemplate: '',
 }
 
-toolboardPage.get('/toolboard', (request, response) => response.render('index', { ...options }))
+toolboardPage.get('/toolboard', (request, response) => {
+	options.childTemplate = ''
+
+	return response.render('index', { ...options })
+})
 
 toolboardPage.get('/toolboard/partners', async (request, response) => {
 	options.childTemplate = './partners.ejs'

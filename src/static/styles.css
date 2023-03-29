@@ -166,6 +166,36 @@ body > main {
 
 }
 
+.toolboard-menu {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+}
+
+.toolboard-menu__item,
+.toolboard-menu__item--active {
+	display: flex;
+	flex-flow: column nowrap;
+	background: white;
+	padding: 1em;
+	border-radius: 1em;
+	text-decoration: none;
+	color: inherit;
+	aspect-ratio: 1/1;
+}
+
+.toolboard-menu__item--active {
+	color: var(--primary-color);
+}
+
+.toolboard-menu__item * {
+	text-align: center;
+}
+
+.toolboard-menu__item__icon {
+	flex: 1;
+}
+
 .principes__content,
 .partners__content {
 	display: grid;
