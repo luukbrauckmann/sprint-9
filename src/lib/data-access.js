@@ -12,53 +12,41 @@ export const get = async (endpoint, query) => {
 		.catch((error) => error)
 }
 
-export const create = async () => {
+export const create = async (endpoint) => {
+	const url = `${env.API_URL}/${endpoint}`
+
 	const options = {
     method: "POST",
-		mode: "cors",
-		cache: "no-cache",
-		credentials: "same-origin",
-		headers: { "Content-Type": "application/json" },
-		redirect: "follow",
-		referrerPolicy: "no-referrer",
 		body: JSON.stringify(data)
 	}
 
-	return await fetch(env.API_URL, options)
+	return await fetch(url, options)
 		.then((response) => response.json())
 		.catch((error) => error)
 }
 
-export const update = async () => {
+export const update = async (endpoint) => {
+	const url = `${env.API_URL}/${endpoint}`
+
 	const options = {
     method: "PATCH",
-		mode: "cors",
-		cache: "no-cache",
-		credentials: "same-origin",
-		headers: { "Content-Type": "application/json" },
-		redirect: "follow",
-		referrerPolicy: "no-referrer",
 		body: JSON.stringify(data)
 	}
 
-	return await fetch(env.API_URL, options)
+	return await fetch(url, options)
 		.then((response) => response.json())
 		.catch((error) => error)
 }
 
-export const remove = async () => {
+export const remove = async (endpoint) => {
+	const url = `${env.API_URL}/${endpoint}`
+
 	const options = {
     method: "DELETE",
-		mode: "cors",
-		cache: "no-cache",
-		credentials: "same-origin",
-		headers: { "Content-Type": "application/json" },
-		redirect: "follow",
-		referrerPolicy: "no-referrer",
 		body: JSON.stringify(data)
 	}
 
-	return await fetch(env.API_URL, options)
+	return await fetch(url, options)
 		.then((response) => response.json())
 		.catch((error) => error)
 }
