@@ -11,10 +11,11 @@ const { env } = process
 
 const server = express()
 const host = env.HOST_IP
-const port = 3000
+const port = env.PORT
 
 server.set('view engine', 'ejs')
 server.set('views', './src/views')
+server.set('trust proxy', true)
 
 server.use(express.static('./src/static'))
 server.use(express.json())

@@ -4,6 +4,9 @@
   "description": "Toolgankelijk voor Vervoerregio Amsterdam",
   "main": "src/server.js",
   "type": "module",
+	"engines": {
+    "node": "18"
+  },
   "directories": {
     "doc": "docs"
   },
