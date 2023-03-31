@@ -64,6 +64,7 @@
 @media (min-width: 62rem) {
 	.menu {
 		display: flex;
+		justify-content: flex-end;
 		height: fit-content;
 		width: max-content;
 		background: white;
@@ -74,7 +75,8 @@
 	.menu::before {
 		content: '';
 		position: absolute;
-		transform: translate(-3.25em, 100%);
+		left: 0;
+		transform: translate(-.75em, 100%);
 		width: auto;
 		height: 100%;
 		aspect-ratio: 2/1;

@@ -6,10 +6,12 @@ import toolboardPage from './routes/toolboard.js'
 import accountPage from './routes/account.js'
 import notFoundPage from './routes/not-found.js'
 
-const server = express()
-const port = 3000
-
 dotenv.config()
+const { env } = process
+
+const server = express()
+const host = env.HOST_IP
+const port = 3000
 
 server.set('view engine', 'ejs')
 server.set('views', './src/views')
@@ -23,4 +25,7 @@ server.get('/toolboard**', toolboardPage)
 server.get('/account**', accountPage)
 server.get('**', notFoundPage)
 
-server.listen(port, () => console.log(`App is served on port http://localhost:${port}/`))
+server.listen(port, () => {
+	console.log(`App is served on port http://localhost:${port}/`)
+	console.log(`App is network served http://${host}:${port}/`)
+})
