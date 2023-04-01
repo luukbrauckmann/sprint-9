@@ -15,7 +15,7 @@ export const get = async (endpoint, query) => {
 		.catch((error) => error)
 }
 
-export const create = async (endpoint) => {
+export const create = async (endpoint, data) => {
 	const url = `${env.API_URL}/${endpoint}`
 
 	const options = {

@@ -6,8 +6,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "firebase serve --only \"functions,hosting\"",
-		"deploy": "firebase deploy --only \"functions,hosting\""
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "deploy": "firebase deploy --only \"functions,hosting\""
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality/issues"
   },
-  "homepage": "https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality#readme"
+  "homepage": "https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "firebase": "^9.19.1",
+    "firebase-functions": "^4.2.1",
+    "nodemon": "^2.0.22"
+  }
 }
