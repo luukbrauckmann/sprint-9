@@ -1,0 +1,15 @@
+.messages {
+	padding: var(--body-padding);
+}
+
+.message,
+.message--success,
+.message--error {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: .5em;
+	padding: 1em;
+	background: rgba(212, 0, 91, .2);
+	border: 1px solid transparent;
+	border-radius: 1em;
+}

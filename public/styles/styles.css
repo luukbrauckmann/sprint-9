@@ -5,6 +5,7 @@ Imports
 @import './form.style.css';
 @import './card.style.css';
 @import './menu.style.css';
+@import './message.style.css';
 
 /*
 ====================
@@ -55,7 +56,7 @@ Variables
 	--spacing: 1rem;
 
 
-	--primary-color: #D4005B;
+	--primary-color: rgb(212, 0, 91);
 
 	--success-color: #22C55E;
 	--info-color: #3B82F6;

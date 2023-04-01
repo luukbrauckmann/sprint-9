@@ -1,0 +1,15 @@
+<% if(messages.length > 0) { %>
+	<div class="messages">
+		<% for(let message of messages) { %>
+			<article class="message--<%= message.type %>">
+				<header class="message__header">
+					<h3><%- message.title %></h3>
+				</header>
+
+				<div class="message__content">
+					<p><%- message.detail %></p>
+				</div>
+			</article>
+		<% } %>
+	</div>
+<% } %>

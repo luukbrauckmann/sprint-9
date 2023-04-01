@@ -12,6 +12,13 @@ fieldset {
 }
 
 input {
+	font-size: 1rem;
+	padding: .5em 1em;
 	display: block;
+	border: 1px solid #ced4da;
+	border-radius: 8px;
+}
 
+input:invalid[data-touched="true"] {
+	border-color: var(--danger-color);
 }
