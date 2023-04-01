@@ -2,17 +2,17 @@
   "name": "the-web-is-for-everyone-interactive-functionality",
   "version": "1.0.0",
   "description": "Toolgankelijk voor Vervoerregio Amsterdam",
-  "main": "src/server.js",
+  "main": "src/index.js",
   "type": "module",
-	"engines": {
+  "engines": {
     "node": "18"
   },
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js --host",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js --host",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,12 +27,15 @@
   ],
   "author": "Luuk Brauckmann",
   "license": "ISC",
-  "bugs": { "url": "https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality/issues" },
+  "bugs": {
+    "url": "https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality/issues"
+  },
   "homepage": "https://github.com/luukbrauckmann/the-web-is-for-everyone-interactive-functionality#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "firebase": "^9.19.1"
   },
   "devDependencies": {
     "@yarnpkg/sdks": "^3.0.0-rc.41",
