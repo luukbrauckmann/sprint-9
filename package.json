@@ -6,7 +6,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "firebase serve --only \"functions,hosting\""
+    "start": "firebase serve --only \"functions,hosting\"",
+		"deploy": "firebase deploy --only \"functions,hosting\""
   },
   "repository": {
     "type": "git",

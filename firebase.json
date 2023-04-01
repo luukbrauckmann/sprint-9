@@ -12,6 +12,7 @@
     }
   ],
   "hosting": {
+		"site": "sprint-9-fdnd",
     "public": "public",
 		"rewrites": [
 			{
