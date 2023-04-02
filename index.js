@@ -9,18 +9,19 @@ import toolboardPage from './routes/toolboard.js'
 import accountPage from './routes/account.js'
 import notFoundPage from './routes/not-found.js'
 
+const { env } = process
 const server = express()
 
 const host = network.getExposedIp()
-const port = 3000
+const port = env.PORT
 
 server.set('view engine', 'ejs')
-server.set('views', './views')
+server.set('views', 'views')
 server.set('trust proxy', true)
 
 server.use(compression())
 server.use(helmet())
-server.use(express.static('./public'))
+server.use(express.static('public'))
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 
