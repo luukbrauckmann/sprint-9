@@ -2,19 +2,19 @@
   "name": "the-web-is-for-everyone-interactive-functionality",
   "version": "1.0.0",
   "description": "Toolgankelijk voor Vervoerregio Amsterdam",
-  "main": "index.js",
+  "main": "src/server.js",
   "type": "module",
   "directories": {
     "docs": "docs",
 		"src": "src"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-		"deploy": "gcloud run deploy"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+		"deploy": "gcloud run deploy sprint-9 --source ."
   },
 	"engines": {
-    "node": ">=12.0.0"
+    "node": ">=18.0.0"
   },
   "repository": {
     "type": "git",
