@@ -1,0 +1,16 @@
+.button {
+	font-size: 1rem;
+	display: inline-flex;
+	gap: .5em;
+	background: var(--primary-color);
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 1em;
+	padding: .5em;
+	cursor: pointer;
+}
+
+.button__icon {
+	width: 1em;
+	height: 1em;
+}

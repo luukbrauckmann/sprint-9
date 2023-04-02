@@ -1,5 +1,7 @@
 
 import express from 'express'
+import compression from 'compression'
+import helmet from 'helmet'
 import network from './lib/network.js'
 
 import startPage from './routes/start.js'
@@ -8,6 +10,7 @@ import accountPage from './routes/account.js'
 import notFoundPage from './routes/not-found.js'
 
 const server = express()
+
 const host = network.getExposedIp()
 const port = 3000
 
@@ -15,6 +18,8 @@ server.set('view engine', 'ejs')
 server.set('views', './views')
 server.set('trust proxy', true)
 
+server.use(compression())
+server.use(helmet())
 server.use(express.static('./public'))
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))

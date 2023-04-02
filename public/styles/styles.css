@@ -6,6 +6,7 @@ Imports
 @import './card.style.css';
 @import './menu.style.css';
 @import './message.style.css';
+@import './button.css';
 
 /*
 ====================
@@ -58,10 +59,10 @@ Variables
 
 	--primary-color: rgb(212, 0, 91);
 
-	--success-color: #22C55E;
+	--success-color: rgb(34, 197, 94);
 	--info-color: #3B82F6;
 	--warning-color: #F59E0B;
-	--danger-color: #EF4444;
+	--danger-color: rgb(239, 68, 68);
 
 	--background: #F3F3F3;
 
