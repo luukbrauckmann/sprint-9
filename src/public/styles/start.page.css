@@ -1,0 +1,26 @@
+.main__content.main__content--startpage {
+	padding-inline: 0;
+}
+
+.main__content__header {
+	padding-block: 2rem;
+}
+
+.main__content__header__title {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.main__content__header__title__text {
+	color: initial;
+}
+
+.main__content__header__title__text--veryveryimportant {
+	font-size: 3rem;
+	color: var(--primary-color);
+}
+
+.main__content__header,
+.main__content__content {
+	padding-inline: var(--body-padding);
+}

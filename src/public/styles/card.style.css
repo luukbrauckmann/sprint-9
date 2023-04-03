@@ -1,7 +1,7 @@
 .card {
   padding: 1em;
   background: white;
-  display: inline-flex;
+  display: flex;
   flex-flow: column nowrap;
   gap: 1em;
   border-radius: 0 1em 1em;

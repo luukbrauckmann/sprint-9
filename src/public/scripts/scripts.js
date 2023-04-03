@@ -1,13 +1,25 @@
 document.documentElement.classList.add('make-it-fancy')
 
+/**
+ * Focus input detecteren
+ * @param {Event} event
+ */
 addEventListener('focus', (event) => {
-	console.log('Lol wat focus kaas?')
+	const { target } = event
+	console.log(target)
+	if (!target.matches('input')) return
+	target.dateset.touched = true
 })
 
+/**
+ * Berichten verbergen
+ * @param {Event} event
+ */
 addEventListener('click', (event) => {
 	const { target } = event
-	if (!target.matches('button')) return
-	console.log('Lol wat click kaas?')
+	if (target && !target.matches('button') && !target.classList.contains('message')) return
+	const parent = target.parentElement.parentElement
+	parent.style.display = 'none'
 })
 
 addEventListener('submit', (event) => {

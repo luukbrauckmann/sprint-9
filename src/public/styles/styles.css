@@ -7,7 +7,8 @@ Imports
 @import './menu.style.css';
 @import './message.style.css';
 @import './button.css';
-@import './startpage.css';
+@import './section.css';
+@import './start.page.css';
 
 /*
 ====================
@@ -161,7 +162,8 @@ body > main {
 }
 
 .principes,
-.partners {
+.partners,
+.toolboard-menu-container {
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 1em;
@@ -256,7 +258,8 @@ body > main {
 	}
 
 	.toolboard__content {
-		flex-flow: row nowrap;
+		display: grid;
+		grid-template-columns: 20rem auto;
 	}
 
 	.toolboard-menu {
@@ -266,6 +269,7 @@ body > main {
 		flex: 1 0 15em;
 		border-radius: 1em;
 		overflow: hidden;
+		height: fit-content;
 	}
 
 	.toolboard-menu__item,
