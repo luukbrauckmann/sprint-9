@@ -1,3 +1,6 @@
 dispatch:
+  - url: fdnd.luukbrauckmann.nl/*
+    service: default
+
   - url: sprint-9.fdnd.luukbrauckmann.nl/*
     service: sprint-9
