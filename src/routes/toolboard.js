@@ -62,10 +62,8 @@ toolboardPage.get('/toolboard/principes', async (request, response) => {
 
 const getPrincipes = () => get('/principes')
 	.then((res) => res.principes)
-	.error((error) => console.error(error))
 
 const getPartners = () => get('/websites')
 	.then((res) => res.websites)
-	.error((error) => console.error(error))
 
 export default toolboardPage

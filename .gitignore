@@ -1,8 +1,4 @@
 *node_modules
 
-# Environments
-.env
-.env/*
-
 # Firebase
 .firebase
