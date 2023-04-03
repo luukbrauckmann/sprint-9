@@ -1,0 +1,3 @@
+dispatch:
+  - url: sprint-9.fdnd.luukbrauckmann.nl/*
+    service: sprint-9
