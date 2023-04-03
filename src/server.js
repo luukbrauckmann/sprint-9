@@ -41,3 +41,4 @@ server.listen(port, () => {
 	console.log(`App is served on port http://localhost:${port}/`)
 	console.log(`App is network served http://${host}:${port}/`)
 })
+
