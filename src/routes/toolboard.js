@@ -54,7 +54,7 @@ toolboardPage.post('/toolboard/partners/**/urls', async (request, response) => {
 
 toolboardPage.get('/toolboard/principes', async (request, response) => {
 	options.childTemplate = './principes.ejs'
-	const principes = []
+	const principes = await getPrincipes() || []
 
 	response.render('index', { ...options, principes })
 	options.messages = []
@@ -62,8 +62,10 @@ toolboardPage.get('/toolboard/principes', async (request, response) => {
 
 const getPrincipes = () => get('/principes')
 	.then((res) => res.principes)
+	.error((error) => console.error(error))
 
 const getPartners = () => get('/websites')
 	.then((res) => res.websites)
+	.error((error) => console.error(error))
 
 export default toolboardPage
