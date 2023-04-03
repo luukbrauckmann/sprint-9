@@ -1,17 +1,31 @@
 .button {
+	--button-color: var(--primary-color);
 	font-size: 1rem;
 	display: inline-flex;
 	gap: .5em;
-	background: var(--primary-color);
+	background: var(--button-color);
 	color: white;
-	border: 1px solid transparent;
+	border: 1px solid;
+	border-color: var(--button-color);
 	border-radius: 1em;
-	padding: .5em;
+	padding: .5em 1em;
 	cursor: pointer;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+
+.button--text {
+	--button-color: transparent;
+	color: var(--primary-color);
+}
+
+.button--text:hover {
+	background-color: rgba(212, 0, 91, .04);
 }
 
 .button * {
 	pointer-events: none;
+	line-height: 1;
 }
 
 .button__icon {
