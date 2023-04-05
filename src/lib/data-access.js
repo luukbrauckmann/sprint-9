@@ -10,7 +10,7 @@ const { env } = process
  * @returns Promise met de data
  */
 export const get = async (endpoint, query) => {
-	const url = `${env.API_URL}/${endpoint}`
+	const url = `${env._API_URL}/${endpoint}`
 
 	const options = {
     method: "GET"
@@ -28,7 +28,7 @@ export const get = async (endpoint, query) => {
  * @returns Promise met de data
  */
 export const create = async (endpoint, data) => {
-	const url = `${env.API_URL}/${endpoint}`
+	const url = `${env._API_URL}/${endpoint}`
 
 	const options = {
     method: "POST",
@@ -47,7 +47,7 @@ export const create = async (endpoint, data) => {
  * @returns Priomise met de data
  */
 export const update = async (endpoint, data) => {
-	const url = `${env.API_URL}/${endpoint}`
+	const url = `${env._API_URL}/${endpoint}`
 
 	const options = {
     method: "PATCH",
@@ -66,7 +66,7 @@ export const update = async (endpoint, data) => {
  * @returns Promise met de data
  */
 export const remove = async (endpoint, id) => {
-	const url = `${env.API_URL}/${endpoint}`
+	const url = `${env._API_URL}/${endpoint}`
 
 	const options = {
     method: "DELETE"
