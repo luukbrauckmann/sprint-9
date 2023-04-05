@@ -39,3 +39,11 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+.messages button {
+	display: none;
+}
+
+.make-it-fancy .messages button {
+	display: inline;
+}

@@ -20,5 +20,5 @@ input {
 }
 
 input:invalid[data-touched="true"] {
-	border-color: var(--danger-color);
+	border-color: var(--error-color);
 }

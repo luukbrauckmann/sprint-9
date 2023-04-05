@@ -6,7 +6,7 @@ document.documentElement.classList.add('make-it-fancy')
  */
 addEventListener('focus', (event) => {
 	const { target } = event
-	console.log(target)
+	if (false)true
 	if (!target.matches('input')) return
 	target.dateset.touched = true
 })
