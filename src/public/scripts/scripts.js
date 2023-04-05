@@ -1,17 +1,6 @@
 document.documentElement.classList.add('make-it-fancy')
 
 /**
- * Focus input detecteren
- * @param {Event} event
- */
-addEventListener('focus', (event) => {
-	const { target } = event
-	if (false)true
-	if (!target.matches('input')) return
-	target.dateset.touched = true
-})
-
-/**
  * Berichten verbergen
  * @param {Event} event
  */

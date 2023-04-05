@@ -19,7 +19,12 @@
 				</div>
 
 				<footer>
-					<a href="<%= `/toolboard/partners/${ partner.id }/urls` %>">Naar pagina's</a>
+					<a class="button button--transparent button--text button--round" href="<%= `/toolboard/partners/${ partner.id }/urls` %>">
+						<span class="button__label">Naar pagina's</span>
+						<span class="button__icon">
+							<i class="fa-regular fa-arrow-right"></i>
+						</span>
+					</a>
 				</footer>
 			</article>
 		<% } %>
