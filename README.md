@@ -22,7 +22,7 @@ De website wordt progressive enhanced met JavaScript. Progressive Enhancement is
 
 <h2 id="installatie">📥 Installatie</h2>
 
-Zorg dat je NodeJS geïnstalleerd hebt. Clone deze repository. Open een terminal. Zorg dat je in het juiste pad zit van dit project. Voer de commando `npm install` uit. Wanneer deze klaar is kun je de applicatie starten door de commando `npm start` uit te voeren. De applicatie wordt gehost op http://localhost:3000/
+Zorg dat je NodeJS geïnstalleerd hebt. Clone deze repository. Open een terminal. Zorg dat je in het juiste pad zit van dit project. Voer de commando `npm install` uit. Wanneer deze klaar is kun je de applicatie starten door de commando `npm run dev` uit te voeren. De applicatie wordt gehost op http://localhost:3000/
 
 <h2 id="bronnen">🌍 Bronnen</h2>
 
