@@ -31,6 +31,7 @@ Zorg dat je NodeJS geïnstalleerd hebt. Clone deze repository. Open een terminal
 - [ExpressJS](https://expressjs.com/)
 - [EJS](https://ejs.co/)
 - [API Documentatie](https://api.vervoerregio-amsterdam.fdnd.nl/)
+- [Control Flow](https://github.com/luukbrauckmann/sprint-9-leertaak/wiki/Control-Flow)
 
 <h2 id="licenties">🪪 Licenties</h2>
 
