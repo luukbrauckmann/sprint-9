@@ -17,36 +17,43 @@ Fonts
 @font-face {
 	font-family: Medium;
 	src: url('../fonts/FiraSans/FiraSans-Medium.ttf');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Light;
 	src: url('../fonts/FiraSans/FiraSans-Light.ttf');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Extra Light Italic;
 	src: url('../fonts/FiraSans/FiraSans-ExtraLightItalic.ttf');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Book;
 	src: url('../fonts/FiraSans/FiraSans-Light.ttf');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Book Italic;
 	src: url('../fonts/FiraSans/FiraSans-Light.ttf');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Bold;
 	src: url('../fonts/FiraSans/FiraSans-Bold.ttf');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: Regular;
 	src: url('../fonts/FiraSans/FiraSans-Regular.ttf');
+	font-display: swap;
 }
 
 /*
