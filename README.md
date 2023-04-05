@@ -18,6 +18,8 @@ Toolgankelijk is een tool...
 
 De website wordt server side gerendered door middel van NodeJS & EJS. Het is gebouwd in HTML, CSS & JS. Data wordt geleverd door de API van FDND die voor vervoerregio-amsterdam is gemaakt.
 
+De website wordt progressive enhanced met JavaScript. Progressive Enhancement is het toevoegen en verbeteren van functionaliteiten waar kan. Het doel is om de ervaring van de gebruiker prettiger te maken, maar de core functionaliteiten altijd werkend te houden voor mensen die het niet kunnen benutten. Wanneer JavaScript wordt geladen wordt er aan het `html` element de class `.make-it-fancy` toegevoegd. Deze class gebruik ik om element te displayen wanneer ik zeker weet dat JavaScript ze kan afhandelen.
+
 <h2 id="installatie">📥 Installatie</h2>
 
 Zorg dat je NodeJS geïnstalleerd hebt. Clone deze repository. Open een terminal. Zorg dat je in het juiste pad zit van dit project. Voer de commando `npm install` uit. Wanneer deze klaar is kun je de applicatie starten door de commando `npm start` uit te voeren. De applicatie wordt gehost op http://localhost:3000/
