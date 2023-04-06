@@ -16,7 +16,7 @@ Toolgankelijk is een tool waar de partners van Vervoerregio Amsterdram kunnen zi
 
 <h2 id="kenmerken">✨ Kenmerken</h2>
 
-De website wordt server side gerendered door middel van NodeJS & EJS. Het is gebouwd in HTML, CSS & JS. Data wordt geleverd door de API van FDND die voor vervoerregio-amsterdam is gemaakt.
+De website wordt server side gerendered door middel van NodeJS, ExpressJS & EJS. Het is gebouwd in HTML, CSS & JS. Data wordt geleverd door de API van FDND die voor vervoerregio-amsterdam is gemaakt.
 
 De website wordt progressive enhanced met JavaScript. Progressive Enhancement is het toevoegen en verbeteren van functionaliteiten waar kan. Het doel is om de ervaring van de gebruiker prettiger te maken, maar de core functionaliteiten altijd werkend te houden voor mensen die het niet kunnen benutten. Wanneer JavaScript wordt geladen wordt er aan het `html` element de class `.make-it-fancy` toegevoegd. Deze class gebruik ik om element te displayen wanneer ik zeker weet dat JavaScript ze kan afhandelen.
 
