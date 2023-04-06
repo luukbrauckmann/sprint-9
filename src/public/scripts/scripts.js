@@ -12,5 +12,5 @@ addEventListener('click', (event) => {
 })
 
 addEventListener('submit', (event) => {
-	console.log('Lol wat submit kaas?')
+	console.log('submit')
 })
