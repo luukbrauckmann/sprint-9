@@ -3,6 +3,8 @@
   <span> Toolgankelijk</span>
 </h1>
 
+![image](https://user-images.githubusercontent.com/47314813/230305429-00210788-9719-4c32-aed8-78daf7a27143.png)
+
 <h2 id="inhoud">📦 Inhoud</h2>
 
 1. Beschrijving
