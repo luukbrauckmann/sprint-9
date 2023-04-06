@@ -12,7 +12,7 @@
 
 <h2 id="beschrijving">ℹ️ Beschrijving</h2>
 
-Toolgankelijk is een tool...
+Toolgankelijk is een tool waar de partners van Vervoerregio Amsterdram kunnen zien aan welke toegankelijkheids principes zij vooldoen. Parnters kunnen pagina's aan hun website toevoegen die ze kunnen checken.
 
 <h2 id="kenmerken">✨ Kenmerken</h2>
 
