@@ -33,7 +33,11 @@ Zorg dat je NodeJS geïnstalleerd hebt. Clone deze repository. Open een terminal
 - [ExpressJS](https://expressjs.com/)
 - [EJS](https://ejs.co/)
 - [API Documentatie](https://api.vervoerregio-amsterdam.fdnd.nl/)
+- [nodemon](https://nodemon.io/)
+- [Mobile menu inspiratie](https://www.youtube.com/watch?v=7YZe5XE5lls&t=551s)
 - [Control Flow](https://github.com/luukbrauckmann/sprint-9-leertaak/wiki/Control-Flow)
+- [Pen menu](https://codepen.io/luuk-brauckmann/pen/jOvdbeq)
+- [Pen folder card](https://codepen.io/luuk-brauckmann/pen/eYLQOQB)
 
 <h2 id="licenties">🪪 Licenties</h2>
 
