@@ -1,7 +1,4 @@
-import dotenv from "dotenv"
-dotenv.config()
-
-const { env } = process
+const apiUrl = 'https://api.vervoerregio-amsterdam.fdnd.nl/api/v1'
 
 /**
  * Data getten
@@ -10,10 +7,10 @@ const { env } = process
  * @returns Promise met de data
  */
 export const get = async (endpoint, query) => {
-	const url = `${env._API_URL}/${endpoint}`
+	const url = `${apiUrl}/${endpoint}`
 
 	const options = {
-    method: "GET"
+		method: "GET"
 	}
 
 	return await fetch(url, options)
@@ -28,10 +25,10 @@ export const get = async (endpoint, query) => {
  * @returns Promise met de data
  */
 export const create = async (endpoint, data) => {
-	const url = `${env._API_URL}/${endpoint}`
+	const url = `${apiUrl}/${endpoint}`
 
 	const options = {
-    method: "POST",
+		method: "POST",
 		body: JSON.stringify(data)
 	}
 
@@ -47,10 +44,10 @@ export const create = async (endpoint, data) => {
  * @returns Priomise met de data
  */
 export const update = async (endpoint, data) => {
-	const url = `${env._API_URL}/${endpoint}`
+	const url = `${apiUrl}/${endpoint}`
 
 	const options = {
-    method: "PATCH",
+		method: "PATCH",
 		body: JSON.stringify(data)
 	}
 
@@ -66,10 +63,10 @@ export const update = async (endpoint, data) => {
  * @returns Promise met de data
  */
 export const remove = async (endpoint, id) => {
-	const url = `${env._API_URL}/${endpoint}`
+	const url = `${apiUrl}/${endpoint}`
 
 	const options = {
-    method: "DELETE"
+		method: "DELETE"
 	}
 
 	return await fetch(url, options)
