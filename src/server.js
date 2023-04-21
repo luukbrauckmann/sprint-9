@@ -42,3 +42,4 @@ server.listen(port, () => {
 	console.log(`App is network served http://${host}:${port}/`)
 })
 
+module.exports = app
