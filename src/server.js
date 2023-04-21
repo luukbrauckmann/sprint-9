@@ -39,4 +39,4 @@ server.listen(port, () => {
 	console.log(`App is served on port http://localhost:${port}/`)
 })
 
-module.exports = server
+module.exports = app = { ...server }
